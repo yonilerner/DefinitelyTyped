@@ -22,6 +22,7 @@ declare namespace RateLimit {
         keyGenerator?(): string;
         max?: number;
         message?: string;
+        onLimitReached()?: void;
         skip?(): boolean;
         statusCode?: number;
         store?: Store;
